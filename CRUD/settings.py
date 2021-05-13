@@ -86,11 +86,11 @@ WSGI_APPLICATION = 'CRUD.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ddmcgp7erq31t', #Database에있는 내용
-        'USER' : 'uqntnvgdkrwbfw',
-        'PASSWORD' : '7ca85e1d3e54d22ad1d4165a9f0b055d3099a87458a8e0c78683bad1faad2f91',
-        'HOST' : 'ec2-18-215-111-67.compute-1.amazonaws.com', 
-        'POST' : '5432',  #PORT에 있는 내용
+        'NAME': 'd40ttjbpfmbnt3', #Database에있는 내용
+        'USER' : 'mvgsiutwaqmgur',
+        'PASSWORD' : 'bf8d54265071a6f43be74f3249effd8927e9874030b1e1131f246028fd07953c',
+        'HOST' : 'ec2-23-23-128-222.compute-1.amazonaws.com', 
+        'PORT' : '5432',  #PORT에 있는 내용
     }
 }
 db_from_env = dj_database_url.config(conn_max_age=500)
