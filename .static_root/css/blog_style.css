@@ -1,0 +1,8 @@
+body{margin-top: 20px;}
+div{position: relative;}
+h1{border-bottom: 2px solid darkgray; padding-bottom: 20px;}
+a{text-decoration: none;}
+a:link{color: black;}
+a:visited{color: black;}
+.write{font-size: 20px;}
+.center, .write{width: 660px; left:0; right:0; margin-left: auto; margin-right: auto;}

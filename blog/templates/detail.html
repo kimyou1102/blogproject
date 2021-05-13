@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/detail.css' %}">
+    <script type="text/javascript" src="{% static 'css/js.js' %}"></script>
+</head>
+<body>
+    <div>
+        <h1>{{blog_detail.title}}</h1>
+        <p class="info"><span class="writer">{{blog_detail.writer}}</span><span class="date">{{blog_detail.pub_date}}</span><img src="https://img.icons8.com/windows/50/000000/menu-2.png"/></p>
+        <p class="line"></p>
+        <br>
+        <p>✅{{blog_detail.todo}}</p>
+        <br>
+        <p>{{blog_detail.body}}</p>
+        <br><br>
+        <p><a href="{% url 'edit' blog_detail.id %}"><span class="right">수정 </span></a><a href="{% url 'delete' blog_detail.id %}"><span class="delete"> 삭제</span></a>
+        </p>
+  
+    </div>
+    <br>
+</body>
+<footer>
+    <a href="{% url 'home' %}"><span class="right">전체글 보기</span></a>
+    <p class="line"></p>
+</footer>
+</html>
